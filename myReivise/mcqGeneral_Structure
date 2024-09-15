@@ -1,0 +1,2925 @@
+<div class="container containerofMCQs">
+        <div class="question-section" id="mcq1">
+            <h2 class="question">1. Where did the writer watch the play?</h2>
+            <div class="mcq-options">
+                <div class="option">
+                    <label for="option1A" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option1" value="A" id="option1A">
+                        a) Denver
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option1B" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option1" value="B" id="option1B">
+                        b) Dublin
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option1C" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option1" value="C" id="option1C">
+                        c) Ireland
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option1D" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option1" value="D" id="option1D">
+                        d) Britain
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="answer-section">
+                <p class="text-lg font-normal"><span>Answer: </span>The writer watched the play in 'Dublin'.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mcqContainer = document.getElementById('mcq1');
+    const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+    const correctAnswer = 'B'; // Set this to the letter of the correct option
+
+    options.forEach(option => {
+        option.addEventListener('change', () => {
+            // Hide all tick and cross icons
+            mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+            // Remove previous correctness styles
+            mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+            // Get the selected option and the corresponding container
+            const optionContainer = option.closest('.option');
+            
+            // Check if the selected option is correct
+            if (option.value === correctAnswer) {
+                optionContainer.classList.add('correct');
+                optionContainer.querySelector('.tick-icon').style.opacity = 1;
+            } else {
+                optionContainer.classList.add('incorrect');
+                optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                // Show the tick icon for the correct option
+                const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                correctOptionContainer.classList.add('correct');
+                correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+            }
+
+            // Show the answer explanation
+            mcqContainer.querySelector('.answer-section').style.display = 'block';
+        });
+    });
+});
+    </script>
+    
+    <div class="container containerofMCQs" > <!-- last style="margin-bottom: -35px" -->
+        <div class="question-section" id="mcq2">
+            <h2 class="question">2. Who has written the essay 'The Pace for Living'.</h2>
+            <div class="mcq-options">
+                <div class="option">
+                    <label for="option2A" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option2" value="A" id="option2A">
+                        a) R.C. Hutchinson
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option2B" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option2" value="B" id="option2B">
+                        b) Mahadevi Verma
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option2C" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option2" value="C" id="option2C">
+                        c) Joan lexau
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="option2D" class="text-lg cursor-pointer flex items-center w-full">
+                        <input type="radio" name="option2" value="D" id="option2D">
+                        d) Toni Morrison
+                        <span class="tick-icon hidden">&#10003;</span>
+                        <span class="cross-icon hidden">&#10007;</span>
+                        <span class="ripple"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="answer-section">
+                <p class="text-lg font-normal"><span>Ans: </span>The writer of the chapter is R.C. Hutchinson.</p>
+            </div>
+        </div>
+    </div>
+
+<script> 
+            document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq2');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+ </script>
+ <!-- 3 -->
+ <div class="container containerofMCQs">
+    <div class="question-section" id="mcq3">
+        <h2 class="question">3. What is the main theme of the novel?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option3A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option3" value="A" id="option3A">
+                    a) Friendship
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option3B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option3" value="B" id="option3B">
+                    b) Adventure
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option3C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option3" value="C" id="option3C">
+                    c) Mystery
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option3D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option3" value="D" id="option3D">
+                    d) Romance
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The main theme of the novel is 'Adventure'.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq3');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 3
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 4 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq4">
+        <h2 class="question">4. Who is the protagonist of the story?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option4A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option4" value="A" id="option4A">
+                    a) John Doe
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option4B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option4" value="B" id="option4B">
+                    b) Jane Smith
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option4C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option4" value="C" id="option4C">
+                    c) Robert Brown
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option4D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option4" value="D" id="option4D">
+                    d) Alice Johnson
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The protagonist of the story is 'Jane Smith'.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq4');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'D'; // Set this to the letter of the correct option for MCQ 4
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 5 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq5">
+        <h2 class="question">5. What is the setting of the story?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option5A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option5" value="A" id="option5A">
+                    a) Urban City
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option5B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option5" value="B" id="option5B">
+                    b) Countryside
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option5C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option5" value="C" id="option5C">
+                    c) Coastal Town
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option5D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option5" value="D" id="option5D">
+                    d) Desert
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The setting of the story is 'Countryside'.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq5');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'C'; // Set this to the letter of the correct option for MCQ 5
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 6 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq6">
+        <h2 class="question">6. Lorem ipsum dolor sit amet?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option6A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option6" value="A" id="option6A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option6B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option6" value="B" id="option6B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option6C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option6" value="C" id="option6C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option6D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option6" value="D" id="option6D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Lorem ipsum dolor sit amet, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq6');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 6
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 7 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq7">
+        <h2 class="question">7. Consectetur adipiscing elit?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option7A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option7" value="A" id="option7A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option7B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option7" value="B" id="option7B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option7C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option7" value="C" id="option7C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option7D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option7" value="D" id="option7D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Consectetur adipiscing elit, option 'C' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq7');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'C'; // Set this to the letter of the correct option for MCQ 7
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 8 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq8">
+        <h2 class="question">8. Sed do eiusmod tempor incididunt?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option8A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option8" value="A" id="option8A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option8B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option8" value="B" id="option8B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option8C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option8" value="C" id="option8C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option8D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option8" value="D" id="option8D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Sed do eiusmod tempor incididunt, option 'D' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq8');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'D'; // Set this to the letter of the correct option for MCQ 8
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 9 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq9">
+        <h2 class="question">9. Ut enim ad minim veniam?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option9A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option9" value="A" id="option9A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option9B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option9" value="B" id="option9B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option9C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option9" value="C" id="option9C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option9D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option9" value="D" id="option9D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Ut enim ad minim veniam, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq9');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 9
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 10 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq10">
+        <h2 class="question">10. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option10A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option10" value="A" id="option10A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option10B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option10" value="B" id="option10B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option10C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option10" value="C" id="option10C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option10D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option10" value="D" id="option10D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, option 'C' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq10');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'C'; // Set this to the letter of the correct option for MCQ 10
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 11 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq11">
+        <h2 class="question">11. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option11A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option11" value="A" id="option11A">
+                    a) Option 1
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option11B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option11" value="B" id="option11B">
+                    b) Option 2
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option11C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option11" value="C" id="option11C">
+                    c) Option 3
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option11D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option11" value="D" id="option11D">
+                    d) Option 4
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, option 'D' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq11');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'D'; // Set this to the letter of the correct option for MCQ 11
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 12 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq12">
+        <h2 class="question">12. What is the purpose of the `return` statement in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option12A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option12" value="A" id="option12A">
+                    a) To end a loop
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option12B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option12" value="B" id="option12B">
+                    b) To exit a function and return a value
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option12C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option12" value="C" id="option12C">
+                    c) To start a function
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option12D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option12" value="D" id="option12D">
+                    d) To create a loop
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `return` statement is used to exit a function and return a value, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq12');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 12
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 13 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq13">
+        <h2 class="question">13. Which HTML element is used to define important text?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option13A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option13" value="A" id="option13A">
+                    a) `<i>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option13B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option13" value="B" id="option13B">
+                    b) `<strong>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option13C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option13" value="C" id="option13C">
+                    c) `<b>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option13D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option13" value="D" id="option13D">
+                    d) `<mark>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The HTML element used to define important text is `<strong>`, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq13');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 13
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 14 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq14">
+        <h2 class="question">14. What does CSS stand for?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option14A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option14" value="A" id="option14A">
+                    a) Creative Style Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option14B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option14" value="B" id="option14B">
+                    b) Cascading Style Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option14C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option14" value="C" id="option14C">
+                    c) Creative System Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option14D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option14" value="D" id="option14D">
+                    d) Cascading System Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>CSS stands for Cascading Style Sheets, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq14');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 14
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 15 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq15">
+        <h2 class="question">15. What does the `console.log()` function do in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option15A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option15" value="A" id="option15A">
+                    a) Outputs a message to the console
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option15B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option15" value="B" id="option15B">
+                    b) Creates a pop-up alert
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option15C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option15" value="C" id="option15C">
+                    c) Sends data to a server
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option15D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option15" value="D" id="option15D">
+                    d) Updates the HTML content
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `console.log()` function outputs a message to the console, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq15');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 15
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 16 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq16">
+        <h2 class="question">16. In CSS, which property is used to change the text color?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option16A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option16" value="A" id="option16A">
+                    a) `color`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option16B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option16" value="B" id="option16B">
+                    b) `text-color`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option16C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option16" value="C" id="option16C">
+                    c) `font-color`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option16D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option16" value="D" id="option16D">
+                    d) `text-style`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `color` property is used to change the text color in CSS, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq16');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 16
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 17 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq17">
+        <h2 class="question">17. Which method can be used to find the length of a string in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option17A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option17" value="A" id="option17A">
+                    a) `length()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option17B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option17" value="B" id="option17B">
+                    b) `getLength()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option17C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option17" value="C" id="option17C">
+                    c) `size()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option17D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option17" value="D" id="option17D">
+                    d) `length`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The length of a string in JavaScript can be found using the `length` property, option 'D' is correct.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq17');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'D'; // Set this to the letter of the correct option for MCQ 17
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 18 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq18">
+        <h2 class="question">18. What is the correct syntax to create a new object in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option18A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option18" value="A" id="option18A">
+                    a) `var obj = new Object();`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option18B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option18" value="B" id="option18B">
+                    b) `var obj = Object.create();`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option18C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option18" value="C" id="option18C">
+                    c) `var obj = {};`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option18D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option18" value="D" id="option18D">
+                    d) `var obj = new Object[];`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The correct syntax to create a new object in JavaScript is `var obj = {};`, option 'C' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq18');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'C'; // Set this to the letter of the correct option for MCQ 18
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 19 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq19">
+        <h2 class="question">19. Which CSS property is used to set the background color of an element?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option19A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option19" value="A" id="option19A">
+                    a) `background-color`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option19B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option19" value="B" id="option19B">
+                    b) `bgcolor`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option19C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option19" value="C" id="option19C">
+                    c) `background`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option19D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option19" value="D" id="option19D">
+                    d) `color`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `background-color` property is used to set the background color of an element, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq19');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 19
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 20 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq20">
+        <h2 class="question">20. In JavaScript, what will `typeof NaN` return?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option20A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option20" value="A" id="option20A">
+                    a) `number`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option20B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option20" value="B" id="option20B">
+                    b) `string`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option20C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option20" value="C" id="option20C">
+                    c) `object`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option20D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option20" value="D" id="option20D">
+                    d) `undefined`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>In JavaScript, `typeof NaN` returns `number`, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq20');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 20
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 21 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq21">
+        <h2 class="question">21. What method is used to convert a string to an integer in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option21A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option21" value="A" id="option21A">
+                    a) `parseInt()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option21B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option21" value="B" id="option21B">
+                    b) `toInteger()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option21C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option21" value="C" id="option21C">
+                    c) `convertToInt()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option21D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option21" value="D" id="option21D">
+                    d) `stringToInt()`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The method used to convert a string to an integer in JavaScript is `parseInt()`, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq21');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 21
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 22 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq22">
+        <h2 class="question">22. Which of the following is a valid way to declare a variable in JavaScript?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option22A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option22" value="A" id="option22A">
+                    a) `var myVariable`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option22B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option22" value="B" id="option22B">
+                    b) `let myVariable = 10;`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option22C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option22" value="C" id="option22C">
+                    c) `variable myVariable;`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option22D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option22" value="D" id="option22D">
+                    d) `myVariable : var`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The valid way to declare a variable in JavaScript is `let myVariable = 10;`, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq22');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 22
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 23 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq23">
+        <h2 class="question">23. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option23A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option23" value="A" id="option23A">
+                    a) `alt`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option23B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option23" value="B" id="option23B">
+                    b) `src`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option23C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option23" value="C" id="option23C">
+                    c) `title`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option23D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option23" value="D" id="option23D">
+                    d) `name`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The HTML attribute that specifies an alternate text for an image, if the image cannot be displayed, is `alt`, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq23');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 23
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 24 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq24">
+        <h2 class="question">24. What does CSS stand for?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option24A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option24" value="A" id="option24A">
+                    a) Cascading Style Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option24B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option24" value="B" id="option24B">
+                    b) Creative Style Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option24C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option24" value="C" id="option24C">
+                    c) Cascading Sheet Styles
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option24D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option24" value="D" id="option24D">
+                    d) Colorful Style Sheets
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The full form of CSS is Cascading Style Sheets, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq24');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 24
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 25 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq25">
+        <h2 class="question">25. Which HTML element is used to define a navigation bar?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option25A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option25" value="A" id="option25A">
+                    a) `<nav>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option25B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option25" value="B" id="option25B">
+                    b) `<header>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option25C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option25" value="C" id="option25C">
+                    c) `<footer>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option25D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option25" value="D" id="option25D">
+                    d) `<section>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The HTML element used to define a navigation bar is `<nav>`, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq25');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 25
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 26 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq26">
+        <h2 class="question">26. How do you include an external JavaScript file in an HTML document?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option26A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option26" value="A" id="option26A">
+                    a) `<script src="file.js"></script>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option26B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option26" value="B" id="option26B">
+                    b) `<link href="file.js" rel="stylesheet">`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option26C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option26" value="C" id="option26C">
+                    c) `<style src="file.js"></style>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option26D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option26" value="D" id="option26D">
+                    d) `<javascript src="file.js"></javascript>`
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>To include an external JavaScript file, use `<script src="file.js"></script>`, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq26');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 26
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 27 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq27">
+        <h2 class="question">27. What is the purpose of the `alt` attribute in an `<img>` tag?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option27A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option27" value="A" id="option27A">
+                    a) To define an image source
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option27B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option27" value="B" id="option27B">
+                    b) To provide alternative text for an image
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option27C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option27" value="C" id="option27C">
+                    c) To set image width
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option27D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option27" value="D" id="option27D">
+                    d) To set image height
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `alt` attribute in an `<img>` tag provides alternative text for an image, option 'B' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq27');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'B'; // Set this to the letter of the correct option for MCQ 27
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 28 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq28">
+        <h2 class="question">28. What is the purpose of the `id` attribute in HTML?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option28A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option28" value="A" id="option28A">
+                    a) To define a unique identifier for an element
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option28B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option28" value="B" id="option28B">
+                    b) To style an element with CSS
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option28C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option28" value="C" id="option28C">
+                    c) To create a hyperlink
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option28D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option28" value="D" id="option28D">
+                    d) To add comments to the HTML code
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `id` attribute defines a unique identifier for an element, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq28');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 28
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 29 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq29">
+        <h2 class="question">29. What does the `href` attribute in a `<a>` tag specify?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option29A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option29" value="A" id="option29A">
+                    a) The URL of the page the link goes to
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option29B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option29" value="B" id="option29B">
+                    b) The text to display for the link
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option29C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option29" value="C" id="option29C">
+                    c) The color of the link text
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option29D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option29" value="D" id="option29D">
+                    d) The size of the link text
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `href` attribute in a `<a>` tag specifies the URL of the page the link goes to, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq29');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 29
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 30 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq30">
+        <h2 class="question">30. What does the `target="_blank"` attribute do in a `<a>` tag?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option30A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option30" value="A" id="option30A">
+                    a) Opens the link in a new tab or window
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option30B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option30" value="B" id="option30B">
+                    b) Opens the link in the same tab
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option30C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option30" value="C" id="option30C">
+                    c) Makes the link open a popup message
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option30D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option30" value="D" id="option30D">
+                    d) Opens the link in a frame
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `target="_blank"` attribute opens the link in a new tab or window, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq30');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 30
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 31 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq31">
+        <h2 class="question">31. What is the use of the `alt` attribute in an `<img>` tag?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option31A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option31" value="A" id="option31A">
+                    a) To provide alternative text if the image cannot be displayed
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option31B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option31" value="B" id="option31B">
+                    b) To specify the image source
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option31C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option31" value="C" id="option31C">
+                    c) To define the image width
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option31D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option31" value="D" id="option31D">
+                    d) To set the image height
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `alt` attribute provides alternative text if the image cannot be displayed, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq31');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 31
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 32 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq32">
+        <h2 class="question">32. What is the correct way to insert a comment in HTML?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option32A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option32" value="A" id="option32A">
+                    a) <!-- This is a comment -->
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option32B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option32" value="B" id="option32B">
+                    b) /* This is a comment */
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option32C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option32" value="C" id="option32C">
+                    c) // This is a comment
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option32D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option32" value="D" id="option32D">
+                    d) ** This is a comment **
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The correct way to insert a comment in HTML is <!-- This is a comment -->, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq32');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 32
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 33 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq33">
+        <h2 class="question">33. Which of the following is the correct syntax for linking an external CSS file?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option33A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option33" value="A" id="option33A">
+                    a) ht
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option33B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option33" value="B" id="option33B">
+                    b) gt
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option33C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option33" value="C" id="option33C">
+                    c) ht
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option33D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option33" value="D" id="option33D">
+                    d) hy
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The correct syntax for linking an external CSS file is <link rel="stylesheet" href="style.css">, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq33');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 33
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 34 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq34">
+        <h2 class="question">34. How can you make a list item bold in HTML?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option34A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option34" value="A" id="option34A">
+                    a) <b>List Item</b>
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option34B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option34" value="B" id="option34B">
+                    b) <strong>List Item</strong>
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option34C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option34" value="C" id="option34C">
+                    c) <i>List Item</i>
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option34D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option34" value="D" id="option34D">
+                    d) <u>List Item</u>
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>To make a list item bold, use <b>List Item</b> or <strong>List Item</strong>, both are correct, but option 'A' is more commonly used.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq34');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 34
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 35 -->
+<div class="container containerofMCQs">
+    <div class="question-section" id="mcq35">
+        <h2 class="question">35. What does the `href` attribute specify in an `<a>` tag?</h2>
+        <div class="mcq-options">
+            <div class="option">
+                <label for="option35A" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option35" value="A" id="option35A">
+                    a) The URL of the page the link goes to
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option35B" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option35" value="B" id="option35B">
+                    b) The text to be displayed in the link
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option35C" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option35" value="C" id="option35C">
+                    c) The color of the link
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+            <div class="option">
+                <label for="option35D" class="text-lg cursor-pointer flex items-center w-full">
+                    <input type="radio" name="option35" value="D" id="option35D">
+                    d) The size of the link text
+                    <span class="tick-icon hidden">&#10003;</span>
+                    <span class="cross-icon hidden">&#10007;</span>
+                    <span class="ripple"></span>
+                </label>
+            </div>
+        </div>
+        <div class="answer-section">
+            <p class="text-lg font-normal"><span>Answer: </span>The `href` attribute specifies the URL of the page the link goes to, option 'A' is correct.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mcqContainer = document.getElementById('mcq35');
+        const options = mcqContainer.querySelectorAll('.option input[type="radio"]');
+        const correctAnswer = 'A'; // Set this to the letter of the correct option for MCQ 35
+
+        options.forEach(option => {
+            option.addEventListener('change', () => {
+                // Hide all tick and cross icons
+                mcqContainer.querySelectorAll('.tick-icon, .cross-icon').forEach(el => el.style.opacity = 0);
+
+                // Remove previous correctness styles
+                mcqContainer.querySelectorAll('.option').forEach(el => el.classList.remove('correct', 'incorrect'));
+
+                // Get the selected option and the corresponding container
+                const optionContainer = option.closest('.option');
+                
+                // Check if the selected option is correct
+                if (option.value === correctAnswer) {
+                    optionContainer.classList.add('correct');
+                    optionContainer.querySelector('.tick-icon').style.opacity = 1;
+                } else {
+                    optionContainer.classList.add('incorrect');
+                    optionContainer.querySelector('.cross-icon').style.opacity = 1;
+                    // Show the tick icon for the correct option
+                    const correctOptionContainer = mcqContainer.querySelector(`input[value="${correctAnswer}"]`).closest('.option');
+                    correctOptionContainer.classList.add('correct');
+                    correctOptionContainer.querySelector('.tick-icon').style.opacity = 1;
+                }
+
+                // Show the answer explanation
+                mcqContainer.querySelector('.answer-section').style.display = 'block';
+            });
+        });
+    });
+</script>
+<!-- 36 -->
+ 

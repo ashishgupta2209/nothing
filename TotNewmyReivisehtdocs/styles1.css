@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'KrutiDev010';
+    src: url('fonts/KrutiDev010.woff2') format('woff2');
+    unicode-range: U+0900-097F;
+    /* Unicode range for Devanagari script */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1b1b1b;
+    /* Dark text for contrast */
+    background-color: #fff;
+    /* White background */
+}
+
+header {
+    background: #f5f5f5;
+    /* Light gray header */
+    color: #1b1b1b;
+    /* Dark text */
+    padding: 18.5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow */
+    z-index: 100;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #1b1b1b;
+    /* Dark text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff4b5c;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Container for navigation items */
+.containernav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navicons {
+    margin-left: 15px;
+}
+
+.containernav h2 {
+    margin-right: 20px;
+}
+
+
+/* Responsive Navigation Styles */
+@media (max-width: 725px) {
+    .navreivise {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 726px) and (max-width: 1120px) {
+    .navreivise {
+        margin-left: 29px;
+    }
+}
+
+@media (min-width: 1121px) and (max-width: 1280px) {
+    .navreivise {
+        margin-left: 42px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .navreivise {
+        margin-left: 66px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .navreivise {
+        margin-left: 112px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .navreivise {
+        margin-left: 152px;
+    }
+}
+
+.navicons {
+    margin-right: 40px;
+}
+
+/* Navigation Bar Styles */
+/* Navigation Bar Styles */
+nav {
+    position: relative;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 12px;
+    /* Spacing between items */
+    position: relative;
+    /* For pseudo-element positioning */
+}
+
+
+.nav-links li:not(:last-child)::after {
+    content: '|';
+    /* Separator character */
+    position: absolute;
+    right: -15px;
+    /* Adjust based on desired spacing */
+    color: #3b3b3b;
+    /* Separator color */
+    font-size: 1.2rem;
+    /* Adjust size if needed */
+}
+
+
+.nav-links li a {
+    color: #333;
+    /* Changed to dark color for better readability on white background */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1aabff;
+    /* Darker underline for visibility */
+    transition: width 0.3s ease;
+}
+
+
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1aabff;
+    /* Consistent dark underline for smaller screens */
+    transition: width 0.1s ease;
+}
+
+
+.nav-links li:hover {
+    background-color: #f5f5f5;
+    /* Lighter hover effect */
+    border-radius: 3px;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle .bar1,
+.menu-toggle .bar2,
+.menu-toggle .bar3 {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    /* Darker bars for visibility */
+    border-radius: 3px;
+}
+
+.menu-toggle {
+    transition: transform 0.2s ease;
+}
+
+.menu-toggle:active {
+    transform: scale(0.9);
+}
+
+/* Default state - mobile menu hidden */
+.nav-links {
+    display: flex;
+}
+
+@media (max-width: 920px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        /* Changed to white background */
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Lighter shadow */
+        padding-block: 5px;
+        margin: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.nav-links a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.nav-links a:hover {
+    background-color: #ecf9fc;
+    /* Background color on hover */
+}
+
+/* nav bar ends here, prob */
+
+
+
+.hero {
+    background: #e0e0e0;
+    /* Light gray for hero background */
+    color: #1b1b1b;
+    /* Dark text */
+    text-align: center;
+    padding: 100px 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    margin-inline: 10px;
+}
+
+@media (max-width: 780px) {
+    .hero h2 {
+        font-size: 1.5rem;
+        margin-inline: 8px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-inline: 8px;
+}
+
+/* Button Styles */
+.button,
+.button-secondary,
+.button-tertiary,
+.button-zero {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.button {
+    background: #ff4b5c;
+}
+
+.button-zero {
+    background: #1e90ff;
+}
+
+.button-secondary {
+    background: #b840e7;
+}
+
+.button-tertiary {
+    background: #28bb2d;
+}
+
+.button:hover {
+    background: #e03e47;
+    transform: translateY(-2px);
+}
+
+.button-secondary:hover {
+    background: #d700e0;
+    transform: translateY(-2px);
+}
+
+.button-tertiary:hover {
+    background: #2ca132;
+    transform: translateY(-2px);
+}
+
+.button-zero:hover {
+    background: #1c6ea4;
+    transform: translateY(-2px);
+}
+
+/* Miscellaneous Information Section */
+.misc-info {
+    background: #f7f7f7;
+    /* Light background */
+    color: #1b1b1b;
+    /* Dark text */
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.misc-info h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ff4b5c;
+    /* Emphasize with color */
+    text-align: center;
+    margin-bottom: 19px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+footer {
+    background: #f5f5f5;
+    /* Light gray background */
+    color: #1b1b1b;
+    /* Dark text */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow */
+}
+
+
+/* About Us Section */
+/* Miscellaneous Information Section */
+.misc-info {
+    background: #f8f9fa;
+    /* White background */
+    color: #333333;
+    /* Dark gray text color */
+    padding: 35px 20px;
+    text-align: center;
+}
+
+/* Headline with a Red Underline */
+.misc-info h2 {
+    font-size: 1.9rem;
+    /* Default size */
+    font-weight: 700;
+    color: #333333;
+    /* Dark gray for emphasis */
+    text-align: center;
+    margin: 40px 0 19px;
+    /* Adjusted margins */
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#explore {
+    margin-top: 0;
+    /* Adjusted top margin for the "Explore Our Top Resources" text */
+}
+
+/* Underline for Headline and MCQ Heading */
+.misc-info h2::after,
+.mcqwholeheading::after {
+    content: '';
+    display: block;
+    width: 70px;
+    /* Default width, adjusted on screen scaling */
+    height: 4px;
+    /* Thickness of the underline */
+    background-color: #ff4b5c;
+    /* Red underline */
+    margin: 10px auto 0;
+    /* Centered underline */
+    border-radius: 2px;
+}
+
+.mcqwholeheading::after {
+    margin-top: 5px;
+    /* Adjusted top margin */
+}
+
+/* Responsive Headline Styling */
+@media (max-width: 768px) {
+    .misc-info h2 {
+        font-size: 1.77rem;
+        /* Smaller size for tablets */
+        margin-bottom: 15px;
+    }
+
+    .misc-info h2::after,
+    .mcqwholeheading::after {
+        width: 60px;
+        /* Adjusted underline width */
+    }
+}
+
+@media (max-width: 480px) {
+    .misc-info h2 {
+        font-size: 1.5rem;
+        /* Smaller size for mobile */
+        margin-bottom: 11px;
+        /* Adjusted margin */
+    }
+
+    .misc-info h2::after {
+        width: 50px;
+        /* Underline width for small screens */
+    }
+}
+
+
+/* Info Items Layout */
+.info-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-item {
+    background-color: #ffffff;
+    /* Light gray background for contrast */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Lighter shadow for a soft look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    border: 1.89px solid #ddd;
+    /* Light gray border */
+    
+}
+
+.info-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Slightly darker shadow on hover */
+}
+
+.icon {
+    font-size: 43px;
+    color: #333333;
+    /* Dark gray for icons */
+    margin-bottom: 12px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #555555;
+    /* Medium gray for text */
+    margin-bottom: 20px;
+}
+
+/* Default Button Styles */
+.nrbutton {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 5px;
+    background: #666666;
+    /* Dark gray background for buttons */
+    color: #ffffff;
+    /* White text for buttons */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: -3px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ripple Effect for Buttons */
+.nrbutton .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.58);
+    transform: scale(0);
+    pointer-events: none;
+    animation: ripple-animation 0.5s linear;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.nrbutton {
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for normal state */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.nrbutton:active {
+    transform: scale(0.9);
+}
+
+/* Responsive Design for Info Items */
+@media (max-width: 768px) {
+    .info-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .info-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .info-item {
+        width: 22%;
+    }
+}
+
+
+
+/*buttons on hero section */
+.button,
+.button-secondary,
+.button-tertiary,
+.button-zero {
+    display: inline-block;
+    padding: 10px 20px;
+    /*default = 10px, 20px*/
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    /* default margin:5px, with no distinct specific margins*/
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.button {
+    background: #ff4b5c;
+}
+
+.button-zero {
+    background: #1e90ff;
+    /* Blue */
+}
+
+.button-secondary {
+    background: #b840e7;
+    /*default = #444, #cc4bff*/
+}
+
+.button-tertiary {
+    background: #28bb2d;
+    /*default = #4caf50*/
+}
+
+.button:hover {
+    background: #e03e47;
+    transform: translateY(-2px);
+}
+
+.button-secondary:hover {
+    background: #d700e0;
+    /*default = #555*/
+    transform: translateY(-2px);
+}
+
+.button-tertiary:hover {
+    background: #2ca132;
+    /* default = #333*/
+    transform: translateY(-2px);
+}
+
+.button-zero:hover {
+    background: #1c6ea4;
+    /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.button::before,
+.button-secondary::before,
+.button-tertiary::before,
+.button-zero::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.289);
+    /*default = 0.3 opacity*/
+    border-radius: 50%;
+    width: 300%;
+    height: 300%;
+    left: -50%;
+    top: -50%;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.button:focus::before,
+.button:hover::before,
+.button-secondary:focus::before,
+.button-secondary:hover::before,
+.button-tertiary:focus::before,
+.button-tertiary:hover::before,
+.button-zero:focus::before,
+.button-zero:hover::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* for the ripple effect only when the button is clicked for coarse pointered devices*/
+@media (pointer: coarse) {
+
+    .button:active::before,
+    .button-secondary:active::before,
+    .button-tertiary:active::before,
+    .button-zero:active::before {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive button container */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        /* Stack buttons vertically on smaller screens */
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+        /* Ensure buttons are not too wide */
+    }
+}
+
+@media (min-width: 769px) {
+    .button-container {
+        flex-direction: row;
+        /* Arrange buttons in a row on larger screens */
+    }
+
+    .button {
+        flex: 1;
+        /* Allow buttons to grow and fill space */
+        max-width: 200px;
+        /* Control the maximum width of each button */
+    }
+}
+
+/* Follow Us Section */
+.follow-us {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    /* White background for consistency */
+    color: #333;
+    /* Dark color for text */
+}
+
+
+
+/* CSS FOR THE SIDE NAV BAR IN MCQS (and probably too in online tests, solutions, notes!) */
+
+
+/* नेक्स्ट चैप्टर */
+.next-chapter-section {
+    background-color: #1e1e1e;
+    /* Slightly lighter dark background for contrast */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    border: #333 solid;
+}
+
+.next-chapter-text {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-block: 10px;
+}
+
+.next-chapter-text:hover {
+    text-decoration: underline;
+}
+
+.next-chapter-button {
+    display: inline-block;
+    background: linear-gradient(56deg, #678eb4, #497960);
+    color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-chapter-button:hover {
+    background: linear-gradient(56deg, #5f799c, #3c6b4f);
+    transform: scale(1.05);
+}
+
+@media (pointer: fine) {
+    .next-chapter-button:active {
+        transform: scale(0.9);
+        transition: transform 0.12s ease;
+    }
+}
+
+@media (pointer: coarse) {
+    .next-chapter-button:active {
+        transform: scale(0.9);
+        transition: transform 0.111s ease;
+    }
+}
+
+.next-chapter-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (min-width: 576px) and (max-width: 742px) {
+    .remaining-chapters-section {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 462px) and (max-width: 575px) {
+    .remaining-chapters-section {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 461px) {
+    .remaining-chapters-section {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 372px) {
+    .remaining-chapters-section {
+        max-width: 270px;
+    }
+}
+
+/* CSS FOR REMAINING CHAPTERS' DIV */
+.remaining-chapters-section {
+    background-color: #f8f9f9;
+    /* Slightly lighter background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* you may want to adjust the margin-top property to zero*/
+    color: #444;
+    margin-inline: auto;
+    max-width: 500px;
+    width: 100%;
+    border: #333 solid 1.8px;
+    margin-bottom: 20px;
+
+}
+.remaining-chapters-title {
+    font-size: 1.27rem;
+    margin-bottom: 10px;
+    color: #444;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.remaining-chapters-list {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.remaining-chapters-list li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* solutions answer */
+
+.answer {
+    font-size: 1.3rem;
+    margin-top: -12px;
+    font-weight: 600;
+}
+
+.solution-answer {
+    margin-top: 8px;
+}
+
+.solu_answer_p {
+    font-weight: 200;
+    /*default = 500*/
+    font-size: 1.3rem;
+}
+
+
+/* CSS for the dropdown of info-items of subjects */
+
+/* General Styles for Dropdown */
+.info-item {
+    position: relative;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #222;
+    /* Dark background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    z-index: 1;
+    margin-top: -18px;
+    /*de bad = -22px*/
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 350px;
+    /* Adjust width if necessary */
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #504d4d;
+
+}
+
+/* Table Styles */
+.dropdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.03rem;
+    /* Adjust font size */
+    position: relative;
+
+}
+
+/* Add vertical bar (separator) after chapter number column */
+.dropdown-content th:first-child::after,
+.dropdown-content td:first-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #252525;
+    /* default = #fff */
+}
+
+/* Add a vertical bar (separator) between header columns */
+.dropdown-content th:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #fff;
+    /* Separator color */
+}
+
+.dropdown-content th,
+.dropdown-content td {
+    padding: 10px;
+    text-align: left;
+    /*This handles the tex-align property of the main text inside the column, like 1, 2, etc. and the corresponding chapter names*/
+    border-bottom: 1.5px solid #242424;
+    /* default = #ddd */
+    position: relative;
+    color: #1e1e1e;
+}
+
+/* Header Styles */
+.dropdown-content th {
+    padding: 5px 12px;
+    /*default = 4px 12px*/
+    text-align: center;
+    color: #ececec;
+    /* Text color */
+    background-color: #ff4b5c;
+    /* Header background color */
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Alternating row colors */
+.dropdown-content tr:nth-child(even) {
+    background-color: #f1f1f1;
+    /* default = #333 */
+}
+
+.dropdown-content tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* default = #2b2b2b */
+}
+
+/* DIFFERENt colours of both headers */
+.dropdown-content th:first-child {
+    background-color: #ff4b5c;
+}
+
+.dropdown-content th:last-child {
+    background-color: #238fd8;
+}
+
+.dropdown-content th {
+    background-color: #ff4b5c;
+    /* Header background color */
+    color: #ffffff;
+    /* Header text color */
+    height: 50px;
+    border-radius: 2px;
+    font-size: 1.07rem;
+}
+
+.dropdown-content td a {
+    color: #2b2b2b;
+    /* Link color */
+    text-decoration: none;
+}
+
+.dropdown-content td:nth-child(odd) {
+    /*For the centering of the ch no. like, 1,2,3 etc. but not that of the chapters!*/
+    text-align: center;
+}
+
+.dropdown-content td a:hover {
+    text-decoration: underline;
+    color: #4327e4;
+    /* Hover link color */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .dropdown-content table {
+        font-size: 1rem;
+        /* Smaller font size for smaller screens */
+    }
+
+    .dropdown-content th,
+    .dropdown-content td {
+        padding: 8px;
+    }
+}
+
+
+
+/* General Footer Styles */
+.custom-footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #6c757d;
+}
+
+/* Social Media Section Styles */
+.custom-social-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    flex-wrap: wrap;
+}
+
+.custom-left {
+    display: flex;
+    align-items: center;
+}
+
+.custom-right {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.custom-social-link {
+    color: #6c757d;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.custom-social-link:hover {
+    color: #343a40;
+}
+
+/* Links Section Styles */
+.custom-links {
+    padding: 2rem 1rem;
+}
+
+.custom-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.custom-col {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.custom-col-3 {
+    flex: 0 0 25%;
+}
+
+.custom-col-2 {
+    flex: 0 0 16.6667%;
+}
+
+.custom-col-4 {
+    flex: 0 0 33.3333%;
+}
+
+.custom-col-lg-3 {
+    flex: 0 0 33.3333%;
+}
+
+.custom-col-lg-2 {
+    flex: 0 0 16.6667%;
+}
+
+.custom-col-lg-4 {
+    flex: 0 0 25%;
+}
+
+.custom-col-xl-3 {
+    flex: 0 0 25%;
+}
+
+.custom-col-xl-2 {
+    flex: 0 0 16.6667%;
+}
+
+.custom-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.custom-icon {
+    margin-right: 0.5rem;
+    color: #ff4b5c;
+    /* Or any color you prefer */
+}
+
+.custom-link {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+    color: #343a40;
+}
+
+/* Copyright Section Styles */
+.custom-copyright {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.custom-copyright-link {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-copyright-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 768px) {
+    .custom-social-media {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .custom-right {
+        margin-top: 1rem;
+    }
+
+    .custom-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .custom-col {
+        flex: 1 0 100%;
+        padding: 0.5rem 0;
+    }
+
+    .custom-col-3,
+    .custom-col-2,
+    .custom-col-4,
+    .custom-col-lg-3,
+    .custom-col-lg-2,
+    .custom-col-lg-4,
+    .custom-col-xl-3,
+    .custom-col-xl-2 {
+        flex: 1 0 100%;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 576px) {
+    .custom-social-media {
+        padding: 0.5rem;
+    }
+
+    .custom-left,
+    .custom-right {
+        margin-bottom: 1rem;
+    }
+
+    .custom-social-link {
+        font-size: 1rem;
+    }
+
+    .custom-heading {
+        font-size: 1.125rem;
+    }
+
+    .custom-copyright {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}

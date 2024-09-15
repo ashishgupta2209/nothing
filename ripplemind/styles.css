@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Container styling */
+.userblogcontainer {
+    background-color: #f8fafa;
+    /* Light background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding around the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    max-width: 800px;
+    /* Max width for larger screens */
+    margin: auto;
+    /* Centering the container */
+}
+
+/* Heading styling */
+.userblogcontainer h2 {
+    font-size: 2rem; /* Larger font size for heading */
+    font-weight: 700; /* Bold font weight */
+    color: #738292; /* Vibrant color */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Position for decorative elements */
+    padding-bottom: 10px; /* Space for underline effect */
+}
+
+.userblogcontainer h2::after {
+    content: ''; /* Empty content for pseudo-element */
+    display: block; /* Block display */
+    width: 60px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #007bff; /* Underline color */
+    position: absolute; /* Absolute positioning */
+    left: 50%; /* Center the underline */
+    bottom: 0; /* Position at the bottom of the heading */
+    transform: translateX(-50%); /* Center alignment */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+@media (max-width: 991.98px) {
+    .userblogcontainer h2 {
+        font-size: 1.75rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 767.98px) {
+    .userblogcontainer h2 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Form group styling */
+.userblogformgroup {
+    margin-bottom: 1.5rem;
+    /* Space between form elements */
+}
+
+/* Label styling */
+.userblogformgroup label {
+    font-weight: bold;
+    /* Make labels bold */
+    color: #495057;
+    /* Darker color for labels */
+}
+
+/* Input and textarea styling */
+.blogusercontrol {
+    border-radius: 4px;
+    /* Rounded corners for inputs */
+    border: 1px solid #ced4da;
+    /* Border color */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    /* Inner shadow */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Smooth transition */
+}
+
+.blogusercontrol:focus {
+    border-color: #80bdff;
+    /* Border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    /* Shadow on focus */
+}
+
+
+/* Ensure the cards span the full width of the screen */
+.card {
+    width: 100%;
+
+    margin-inline: 0 20px 20px;
+    /* Add spacing between cards */
+    border: 1px solid #ececec
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.read-more-btn:active {
+    background-color: #003366;
+    /* Darkest shade for pressed state */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    /* Softer shadow when pressed */
+    transform: scale(0.94);
+    /* Remove the hover elevation */
+    transition: transform 0.5s;
+}
+
+.read-more-btn {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.read-more-btn:hover {
+    background-color: black;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 0 2px #444;
+    /* Adds a border effect using box-shadow */
+}
+
+/* bigger button on larger screens */
+@media (min-width: 768px) {
+    .read-more-btn {
+        font-size: 0.95rem;
+    }
+}
+
+.blogcontainer {
+    padding-top: 20px;
+    justify-content: center;
+    /* although don't remove the container class from the html */
+    /* max-width: 900px;
+    margin-inline: 0 80px 80px; */
+
+
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    /* Increased height for the image */
+    object-fit: contain;
+    /*contain might be a best one, previous = cover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .card-title {
+        font-size: 1rem;
+        /* Adjust title size for mobile */
+    }
+
+    .card-body p {
+        font-size: 0.8rem;
+        /* Adjust text size for mobile */
+    }
+
+    .card-img-top {
+        height: 200px;
+        /* Smaller image height for mobile */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-title {
+        font-size: 1.1rem;
+        /* Slightly smaller title size for tablets */
+    }
+
+    .card-body p {
+        font-size: 0.85rem;
+        /* Slightly smaller text size for tablets */
+    }
+
+}
+/* Customize the horizontal rule below the title */
+.custom-hr {
+    border: 0;
+    height: 2px;
+    /* Slightly thicker */
+    background-image: linear-gradient(to right, #4a90e2, #022a52) !important;
+    /* Subtle gradient */
+    margin: 10px 0;
+    /* Adjust spacing */
+    width: 75%; /*by chatgpt = 60% */
+    /* Not too long, keeps it centered */
+}
+
+/* Custom padding for the Visit Page link */
+.list-group-item.bg-light .btn-link {
+    padding: 0.25rem 0.5rem;
+    /* Adjust padding values as needed */
+    font-size: 0.875rem;
+    /* Optional: Adjust font size for a more compact look */
+}
+
+.blogcard {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+
+/* Css for the featured blog card! */
+.featured-card {
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ribbon {
+    position: absolute;
+    top: 25px;
+    left: -20px;
+    background: #f39c12;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 20px;
+    transform: rotate(-45deg);
+    z-index: 1;
+    border-radius: 15px;
+
+}
+
+.featured-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.featured-card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.featured-card .card-body {
+    padding: 1.5rem;
+}
+
+.featured-card .card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.btn-smaller {
+    font-size: 0.7rem !important;
+    /* Smaller font size */
+    padding: 0.3rem 0.33rem !important;
+    /* Reduced padding for a smaller button */
+    border-width: 1px;
+    /* Thinner border */
+}
+
+.btn-smaller a {
+    color: inherit;
+    /* Inherit color from button */
+    text-decoration: none;
+    /* Remove underline from link */
+    display: block;
+    /* Make the link fill the button */
+    height: 100%;
+    /* Ensure the link fills the button vertically */
+}
+/* Search Form Styles */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    /* Rounded corners for the entire group */
+    overflow: hidden;
+    /* Ensures that the rounded corners are applied to the whole input group */
+}
+
+.search-input {
+    border: 1px double #ced4da;
+    /* Light gray border for the input */
+    border-radius: 25px 0 0 25px;
+    /* Rounded corners, left side */
+    padding: 10px 15px;
+    /* Padding inside the input */
+    flex: 1;
+    /* Takes up remaining space in the flex container */
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    /* Border color when focused */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    /* Subtle shadow effect */
+}
+
+.search-icon-button {
+    border-radius: 0 25px 25px 0;
+    /* Rounded corners, right side */
+    background-color: #007bff;
+    /* Button background color */
+    border: none;
+    /* Remove default border */
+    width: 50px;
+    /* Fixed width for the button */
+    height: 40px;
+    /* Fixed height for the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* Remove default padding */
+    cursor: pointer;
+    /* Pointer cursor to indicate it's clickable */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+.search-icon-button i {
+    color: white;
+    /* Icon color */
+    font-size: 1.7rem;
+    /* Icon size */
+}
+
+.search-icon-button:hover {
+    background-color: #0056b3;
+    /* Darker background color on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow effect on hover */
+}
+
+.search-icon-button:active {
+    background-color: #004494;
+    /* Even darker background color on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Reduced shadow effect on click */
+}
+
+.search-input {
+    border: 2px solid transparent;
+    /* Initial border */
+    border-radius: 25px 0 0 25px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Padding inside the input */
+    background-color: #fff;
+    /* Background color of the input */
+    position: relative;
+    /* Relative positioning to place the pseudo-element */
+    transition: border-color 0.15s, box-shadow 0.15s;
+    /* Smooth transition */
+}

@@ -1,0 +1,96 @@
+/* Ensure the section has padding and center alignment */
+.misc-info {
+    background-color: #202020; /* Darker gray background */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading styling */
+.misc-info h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Ensure info items do not stretch too wide and center them */
+.info-item {
+    background: #2c2c2c; /* Slightly lighter gray for the item background */
+    color: #fff;
+    padding: 27px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 380px; /* best for tablets and mobile - 320.3px */
+    max-height: 70px;
+    width: 95%; /* default and probably best - 100% */
+    margin: 5px ; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative; /* Ensure the strip is properly positioned */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap; /* Prevent content from wrapping */
+}
+
+@media (max-width: 809px) {
+    .info-item {
+        max-width: 285px; /* don't go below 285px, or else the sizes of the boxes would get uneven on phone... */
+    }
+}
+
+/* Heading inside the item */
+.info-item h3 {
+    font-size: 1.6rem; /*default = 1.5rem;*/
+    margin: 7px 0; /*default = 10px 0;*/
+    color: #fff; /* White for headings inside the item */
+}
+
+/* Paragraph text inside the item */
+.info-item p {
+    margin-bottom: 20px;
+    color: #ccc; /* Lighter gray for paragraph text */
+}
+.info-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* Adjust layout for larger screens */
+@media (min-width: 600px) { /*default = 768px;*/
+    .info-items {
+        flex-direction: row; /* Change to row layout on larger screens */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center items horizontally */
+        gap: 20px;
+    }
+}
+
+/* Strip for each info item */
+.info-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px; /* Width of the strip */
+    height: 100%; /* Full height of the option */
+    background-color: #d8e700; /* Color of the strip */
+    border-radius: 2px 0 0 2px; /* Rounded corners on the left side */
+    
+    
+}
+.info1::before {
+    background-color: #1e90ff;
+}
+.info2::before {
+    background-color:#ff4b5c;
+}
+.info3::before {
+    background-color:#4caf50;
+}
+.info4::before {
+    background-color: #cc4bff;
+}
+.info6::before {
+    background-color: #40ff8f
+}
+

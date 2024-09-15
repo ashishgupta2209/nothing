@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BSEB 8th Solutions - Choose a Social Science - Reivise</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+    
+    
+    .nrbutton {
+        border-radius: 8px; /*See if you want to make the borders circular by asinging a value of 50% or not!*/
+        font-size: 1.4rem; /* default = 1.5rem*/
+        padding: 9px 16.5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        /* margin-right: 5px; see if you want to specify left margin, since it look good without it too! */
+    }
+    .n1 {
+        background: #ff4b5c;
+    }
+    .n2 {
+        background: #1e90ff; /* Blue */
+    }
+    .n3 {
+        background: #cc4bff; /*default = #222*/
+    }
+
+    .n1:hover {
+        background: #e03e47;
+        transform: translateY(-2px);
+    }
+
+    .n3:hover {
+        background: #ad3eeb; /* default = #333*/
+        transform: translateY(-2px);
+    }
+    .n2:hover {
+        background: #238fd8; /* Darker blue */
+        transform: translateY(-2px);
+    }
+    .n1::before, .n2::before, .n3::before {
+        content: '';
+        position: absolute;
+        background: rgba(255, 255, 255, 0.289); /*default = 0.3 opacity*/
+        border-radius: 50%;
+        width: 300%;
+        height: 300%;
+        left: -50%;
+        top: -50%;
+        transition: transform 0.5s, opacity 0.5s;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .n1:focus::before, .n1:hover::before,
+    .n2:focus::before, .n2:hover::before,
+    .n3:focus::before, .n3:hover::before {
+        transform: scale(1);
+        opacity: 1;
+    }
+    /* for the ripple effect only when the button is clicked for coarse pointered devices */
+    @media (pointer: coarse) {
+        .n1:active::before,
+        .n2:active::before,
+        .n3:active::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .n1:active,
+    .n2:active,
+    .n3:active {
+        transform: scale(0.915);
+    }
+    /* Ensure the section has padding and center alignment */
+    .misc-info {
+        background-color: #202020; /* Darker gray background */
+        color: #fff; /* White text for contrast */
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Heading styling
+    .misc-info h2 {
+        margin-bottom: 20px;
+        font-weight: bold;
+    } */
+
+    /* Ensure info items do not stretch too wide and center them */
+    .info-item {
+        background: #313131; /* default = #2c2c2c, best one was = #313131 */
+        color: #fff;
+        padding: 27px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        max-width: 380px; /* best for tablets and mobile - 320.3px */
+        max-height: 65px; /*default one was 70px*/
+        width: 95%; /* default and probably best - 100% */
+        margin: 2px ; /*defalut = 5px, with max-height = 70px*/
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+        position: relative; /* Ensure the strip is properly positioned */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap; /* Prevent content from wrapping */
+        z-index: 2;
+        
+    }
+
+    .info-item:hover {
+        transform: translateY(-3px); /* default = -10px, as per style.css*/
+        
+    }
+
+    /* Heading inside the item */
+    .info-item h3 {
+        font-size: 1.4rem; /*default = 1.45rem;*/
+        margin: 7px 0; /*default = 10px 0;*/
+        color: #fff; /* White for headings inside the item */
+        text-align: left;
+        flex: 1;
+        margin-left: 19px;
+        
+    }
+    
+    
+    /* Paragraph text inside the item */
+    .info-item p {
+        margin-bottom: 20px;
+        color: #ccc; /* Lighter gray for paragraph text */
+    }
+    .info-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    /* Adjust layout for larger screens */
+    @media (min-width: 600px) { /*default = 768px;*/
+        .info-items {
+            flex-direction: column; /* Change to row layout on larger screens */
+            flex-wrap: wrap; /* Allow wrapping if necessary */
+            justify-content: center; /* Center items horizontally */
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    .misc-info h2 { /*Css of the font-size of misc-info h2 to override that of styles.css!*/
+        font-size: 1.5rem;
+    }
+    /* Strip for each info item */
+    .info-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px; /* Width of the strip */
+        height: 100%; /* Full height of the option */
+        background-color: #d8e700; /* Color of the strip */
+        border-radius: 2px 0 0 2px; /* Rounded corners on the left side */
+        
+        
+    }
+    .info1::before {
+        background-color: #1e90ff;
+    }
+    .info2::before {
+        background-color:#ff4b5c;
+    }
+    .info3::before {
+        background-color:#4caf50;
+    }
+    .info4::before {
+        background-color: #cc4bff;
+    }
+    .info6::before {
+        background-color: #40ff8f
+    }
+    .icon {
+        font-size: 33px; /*default = 35px*/
+        color: #f8f8f8; /* default = #e0e0e0, second best consideration = #ececec */
+        margin-block: 12px;
+    }
+    /* The vertical bar between the icon and the heading of info-item h3 */
+    .info-item h3::before {
+        content: '';
+        position: relative;
+        display: inline-block; /* Ensures the pseudo-element respects width and height */
+        width: 1.55px; /* default = 1.5px*/
+        height: 25px; /* Height of the vertical line */
+        background-color: #f8f8f8; /* Color of the vertical line */
+        margin-left: -8px; /* Spacing around the line */
+        margin-right: 16px;
+    }
+    @media (max-width: 450px) {
+        /* Adjust .info-item styles for smaller screens */
+        .info-item {
+            padding: 15px; /* Reduce padding */
+            max-width: 95%; /* Make sure items fit the screen */
+            max-height: 65px; /* yaha bhi default = 70px*/
+            width: 100%; /* Full width */
+            margin: 0px 0; /* default = 5px 0 */
+        }
+
+        /* Adjust heading sizes inside .info-item */
+        .info-item h3 {
+            font-size: 1.35rem; /* Reduce font size */
+            margin: 5px 0; /* Adjust margin */
+            
+        }
+
+        /* Adjust .nrbutton styles */
+        .nrbutton {
+            font-size: 1.2rem; /* Reduce font size */
+            padding: 8px 15px; /* Reduce padding */
+        }
+
+        /* Adjust icon size */
+        .icon {
+            font-size: 30px; /* Reduce icon size */
+            margin-right: 10px; /* Adjust margin */
+            margin-left: 10px;
+        }
+    }
+    
+
+
+
+
+    </style> !important 
+    <!-- The important above IS important and does work, so don't remove it! -->
+    
+</head>
+<body>
+    <header>
+        <div class="container containernav">
+            <h2 class="navreivise" title="Reivise (home)">Reivise</h2>
+            <nav>
+                <div class="menu-toggle">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                <div class="navicons">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#mcqs">MCQs</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#tests">Online Tests</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- MCQs BSEB and CBSE options here -->
+    <section class="misc-info">
+        <div class="container">
+            <h2>सामाजिक विज्ञान MCQs - 8th Bihar Board</h2> <!--There was Select Your Board here with font-size of 1.9rem!-->
+            <div class="info-items">
+                <div class="info-item info1">
+                    <div class="icon">
+                        <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+                    </div>
+                    <h3>इतिहास</h3>
+                    <a href="#" class="nrbutton n1" id="br8thmcqsstnr1" aria-label="History Class 8"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                </div>
+
+
+
+    <!-- Dropdown Content -->
+    <div class="dropdown-content" id="dropdown1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ch. No.</th>
+                    <th>BSEB 8th History MCQs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">कब, कहाँ और कैसे</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">भारत में अंग्रेज़ी राज्य की स्थापना</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">ग्रामीण जीवन और समाज</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">उपनिवेशवाद एवं जनजातीय जीवन</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>शिल्प एवं उद्योग</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>अंग्रेजी शासन के विरुद्ध संघर्ष (1857 का विद्रोह)</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ब्रिटिश शासन एवं शिक्षा</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>जातीय व्यवस्था की चुनौतियाँ</td>
+                </tr>
+                <!-- Add more chapters as needed -->
+            </tbody>
+        </table>
+    </div>
+    
+    
+                <div class="info-item info2">
+                    <div class="icon">
+                        <i class="fa-solid fa-earth-africa" aria-hidden="true"></i>
+                    </div>
+                    <h3>भू-गोल</h3>
+                    <a href="#" class="nrbutton n2" id="br8thmcqsstnr2" aria-label="Geography Class 8"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                </div>
+
+                <!-- Dropdown Content 2 -->
+<div class="dropdown-content" id="dropdown2">
+    <table>
+        <thead>
+            <tr>
+                <th>Ch. No.</th>
+                <th>BSEB 8th Geography MCQs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="#">पृथ्वी का स्वरूप</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="#">जलवायु</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#">संसाधनों का विभाजन</a></td>
+            </tr>
+            <!-- Add more chapters as needed -->
+        </tbody>
+    </table>
+</div>
+                <div class="info-item info3">
+                    <div class="icon">
+                        <i class="fa-solid fa-scroll" aria-hidden="true"></i>
+                    </div>
+                    <h3>लोकतान्त्रिक</h3>
+                    <a href="#" class="nrbutton n3" id="br8thmcqsstnr3" aria-label="Civics class 8"><i class="fa-solid fa-square-poll-vertical"></i></a>
+                </div>
+
+                <!-- Dropdown Content 3 -->
+<div class="dropdown-content" id="dropdown3">
+    <table>
+        <thead>
+            <tr>
+                <th>Ch. No.</th>
+                <th>BSEB 8th Civics MCQs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="#">संविधान</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="#">राज्य सरकार</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#">लोकतंत्र</a></td>
+            </tr>
+            <!-- Add more chapters as needed -->
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.nrbutton');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    // Get the target dropdown id from the button id
+                    const buttonId = button.id; 
+                    const targetId = `dropdown${buttonId.slice(-1)}`; 
+                    const dropdown = document.getElementById(targetId);
+
+                    // Toggle the dropdown visibility
+                    if (dropdown.style.display === 'block') {
+                        dropdown.style.display = 'none';
+                        localStorage.setItem(buttonId, "false"); // Save state as closed
+                    } else {
+                        // First, hide any other open dropdowns
+                        document.querySelectorAll('.dropdown-content').forEach(content => {
+                            content.style.display = 'none';
+                        });
+
+                        // Show the current one
+                        dropdown.style.display = 'block';
+                        localStorage.setItem(buttonId, "true"); // Save state as open
+                    }
+                });
+            });
+
+            // Check saved state for each dropdown when the page loads
+            document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                const dropdownId = dropdown.getAttribute('id'); // e.g., 'dropdown1', 'dropdown2'
+                const buttonId = `br8thmcqsstnr${dropdownId.replace('dropdown', '')}`; 
+                if (localStorage.getItem(buttonId) === "true") {
+                    dropdown.style.display = "block"; // Keep dropdown open if it was open before
+                } else {
+                    dropdown.style.display = "none"; // Default to closed
+                }
+            });
+        });
+
+</script>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div class="container">
+            <div class="follow-us">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <!-- WhatsApp Icon -->
+                    <a href="https://whatsapp.com/yourprofile" class="icon whatsapp" title="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6" fill="currentColor">
+                            <path d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7c-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9c-36.8-15.9-61.8-51.5-66.9-58.7c-.4-.6-.7-.9-.8-1.1c-2-2.6-16.2-21.5-16.2-41c0-18.4 9-27.9 13.2-32.3c.3-.3 .5-.5 .7-.8c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6 .1c.3 0 .5 0 .8 0c2.3 0 5.2 0 8.1 6.8c1.2 2.9 3 7.3 4.9 11.8c3.3 8 6.7 16.3 7.3 17.6c1 2 1.7 4.3 .3 6.9c-3.4 6.8-6.9 10.4-9.3 13c-3.1 3.2-4.5 4.7-2.3 8.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1c2.8 1.4 4.7 2.3 5.5 3.6c.9 1.9 .9 9.9-2.4 19.1c-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM148.1 393.9L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5c-26.6 0-52.7-6.7-75.8-19.3z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Instagram Icon -->
+                    <a href="https://instagram.com/yourprofile" class="icon instagram" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6" fill="currentColor">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Twitter Icon -->
+                    <a href="https://twitter.com/yourprofile" class="icon twitter" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 h-6" fill="currentColor">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2024 Reivise. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../../../script.js"></script>
+</body>
+</html>

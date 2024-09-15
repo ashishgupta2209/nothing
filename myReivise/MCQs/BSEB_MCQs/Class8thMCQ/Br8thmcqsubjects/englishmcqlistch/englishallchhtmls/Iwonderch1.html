@@ -1,0 +1,44 @@
+<!-- the previous js for the dropdown without closing all when refresh !  -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.nrbutton');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // Get the target dropdown id from the button id
+                const buttonId = button.id; // e.g., 'br10thmcqnr1', 'br10thmcqnr2'
+                const targetId = `dropdown${buttonId.slice(-2)}`; // Convert 'br10thmcqnr1' to 'dropdown1'
+                const dropdown = document.getElementById(targetId);
+
+                // Toggle the dropdown visibility
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                    localStorage.setItem(buttonId, "false"); // Save state as closed
+                } else {
+                    // First, hide any other open dropdowns
+                    document.querySelectorAll('.dropdown-content').forEach(content => {
+                        content.style.display = 'none';
+                    });
+
+                    // Show the current one
+                    dropdown.style.display = 'block';
+                    localStorage.setItem(buttonId, "true"); // Save state as open
+                }
+            });
+        });
+
+        // Check saved state for each dropdown when the page loads
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            const dropdownId = dropdown.getAttribute('id'); // e.g., 'dropdown1', 'dropdown2'
+            const buttonId = `br10thmcqnr${dropdownId.replace('dropdown', '')}`; // Convert 'dropdown1' to 'br10thmcqnr1'
+            if (localStorage.getItem(buttonId) === "true") {
+                dropdown.style.display = "block"; // Keep dropdown open if it was open before
+            } else {
+                dropdown.style.display = "none"; // Default to closed
+            }
+        });
+    });
+</script>
